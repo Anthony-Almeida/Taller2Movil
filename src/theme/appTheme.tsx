@@ -6,15 +6,18 @@ export const styles = StyleSheet.create({
         color: SECUNDARY_COLOR,
         fontSize: 27,
         paddingHorizontal: 30,
-        paddingVertical: 30,
-        fontWeight: 'bold'
+        paddingVertical: 20,
+        fontWeight: 'bold',
+        borderRadius:30,
     },
     contentBody: {
         backgroundColor: SECUNDARY_COLOR,
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
-        paddingHorizontal: 40,
-        paddingTop: 40
+        paddingHorizontal: 30,
+        paddingTop: 30,
+    borderBottomLeftRadius:200,
+    borderBottomRightRadius:200,
     },
     titleBody: {
         fontSize: 17,
@@ -54,9 +57,10 @@ export const styles = StyleSheet.create({
     },
     textRedirection:{
         marginTop:30,
-        fontSize:16,
+        fontSize:17,
         color:PRIMARY_COLOR,
         fontWeight:'bold',
         textAlign:'center'
-    }
+    },
+
 });

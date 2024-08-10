@@ -83,9 +83,15 @@ export const LoginScreen = () => {
             <TitleComponent title='Iniciar Sesión' />
             <BodyComponent>
                 <View>
+                    <View style={styles.inputText}>
                     <Text
                         style={styles.titleBody}>
-                        Bienvenido de nuevo!
+                        Bienvenido de nuevo
+                    </Text>
+                    </View>
+                    <Text
+                        style={styles.titleBody}>
+                        
                     </Text>
                     <Text
                         style={styles.descriptionBody}>

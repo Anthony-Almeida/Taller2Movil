@@ -50,7 +50,7 @@ export const RegisterScreen = () => {
           </Text>
           <Text
             style={styles.descriptionBody}>
-            Realiza tus compras de manera rápida y segura
+            Compra una gran variedad de articulos en Pyagames
           </Text>
         </View>
         <View style={styles.contentInput}>
@@ -58,6 +58,18 @@ export const RegisterScreen = () => {
             placeholder='Correo'
             handleSetValues={handleSetValues}
             name='email' />
+             <InputComponent
+            placeholder='Nombre'
+            handleSetValues={handleSetValues}
+            name='Nombre' />
+             <InputComponent
+            placeholder='Apellido'
+            handleSetValues={handleSetValues}
+            name='Apellido' />
+             <InputComponent
+            placeholder='Pais'
+            handleSetValues={handleSetValues}
+            name='pais' />
           <InputComponent
             placeholder='Contraseña'
             handleSetValues={handleSetValues}
