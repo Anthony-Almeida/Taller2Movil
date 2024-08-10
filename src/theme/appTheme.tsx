@@ -62,5 +62,25 @@ export const styles = StyleSheet.create({
         fontWeight:'bold',
         textAlign:'center'
     },
+    titleBienvenido: {
+        fontSize: 17,
+        fontWeight: 'bold',
+        color: PRIMARY_COLOR,
+        alignSelf:"center"
+    },
+    etiqueta: { 
+        borderRadius:10,
+        height:80,
+        width:80,
+        alignSelf:"center"
+    },
+    avisoRegistro:{
+        alignSelf:"center",
+        fontWeight:"bold",
+        fontSize:15,
+        marginTop:40,
+        justifyContent:"center",
+        textAlign:"center"
 
+    }
 });

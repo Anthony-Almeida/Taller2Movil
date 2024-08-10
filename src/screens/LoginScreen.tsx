@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, StatusBar, Text, TouchableOpacity, View } from 'react-native';
+import { Alert, Image, StatusBar, Text, TouchableOpacity, View } from 'react-native';
 import { TitleComponent } from '../components/TitleComponent';
 import { PRIMARY_COLOR } from '../commons/constantsColor';
 import { BodyComponent } from '../components/BodyComponent';
@@ -85,7 +85,7 @@ export const LoginScreen = () => {
                 <View>
                     <View style={styles.inputText}>
                     <Text
-                        style={styles.titleBody}>
+                        style={styles.titleBienvenido}>
                         Bienvenido de nuevo
                     </Text>
                     </View>
@@ -93,11 +93,10 @@ export const LoginScreen = () => {
                         style={styles.titleBody}>
                         
                     </Text>
-                    <Text
-                        style={styles.descriptionBody}>
-                        Realiza tus compras de manera rápida y segura
-                    </Text>
+                
                 </View>
+                
+                <Image  style={styles.etiqueta} source={{uri:'https://cdn-icons-png.flaticon.com/512/10141/10141012.png'}}/>
                 <View style={styles.contentInput}>
                     <InputComponent
                         placeholder='Correo'
@@ -116,6 +115,9 @@ export const LoginScreen = () => {
                     onPress={() => navigation.dispatch(CommonActions.navigate({name:'Register'}))}>
                     <Text style={styles.textRedirection}>
                         No tienes cuenta? Regístrate ahora
+                    </Text>
+                    <Text style={styles.contentBody} >
+                    Realiza tus compras de manera rápida y segura y obten beneficios y descuentos para tu proxima compra
                     </Text>
                 </TouchableOpacity>
             </BodyComponent>

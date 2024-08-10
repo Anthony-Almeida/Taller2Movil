@@ -46,11 +46,7 @@ export const RegisterScreen = () => {
         <View>
           <Text
             style={styles.titleBody}>
-            Estás muy cerca!
-          </Text>
-          <Text
-            style={styles.descriptionBody}>
-            Compra una gran variedad de articulos en Pyagames
+            Unete a nuestra comunidad de videojugadores a nivel mundial.
           </Text>
         </View>
         <View style={styles.contentInput}>
@@ -85,6 +81,9 @@ export const RegisterScreen = () => {
             Ya tienes una cuenta? Iniciar sesión ahora
           </Text>
         </TouchableOpacity>
+        <Text style={styles.avisoRegistro}>
+          Compra de una manera totalmente diferente, obteniendo beneficos exclusivos para usuarios registrados.
+          </Text>
       </BodyComponent>
     </View>
   )
