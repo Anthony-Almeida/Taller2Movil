@@ -8,32 +8,37 @@ import { InputComponent } from '../components/InputComponent';
 import { ButtonComponent } from '../components/ButtonComponent';
 import { CommonActions, useNavigation } from '@react-navigation/native';
 
-//interface - formulario Registro
+
 interface FormRegister {
   email: string;
   password: string;
+  nombre:string;
+  Apellido:string;
+  pais:string;
 }
 
 export const RegisterScreen = () => {
 
-  //hook useState: Manipular el estado del formulario
+  
   const [formRegister, setFormRegister] = useState<FormRegister>({
     email: '',
-    password: ''
+    password: '',
+    nombre:'',
+    Apellido:'',
+    pais:'',
   });
 
-  //hook useState: permitir que la contraseña sea visible o no
+  
   const [hiddenPassword, setHiddenPassword] = useState<boolean>(true);
 
-  //hook useNavigation: permitir navegar de una pantalla a otra
+  
   const navigation = useNavigation();
 
-  //función que actualice el estado del formulario
   const handleSetValues = (name: string, value: string) => {
     setFormRegister({ ...formRegister, [name]: value });
   }
 
-  //función que permita registrar usuario
+  
   const handleSignUp = () => {
     console.log(formRegister);
   }
