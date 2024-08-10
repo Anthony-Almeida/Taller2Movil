@@ -10,6 +10,12 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         borderRadius:30,
     },
+    continer: {
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: '#eaf2f8',
+        alignItems: 'center',
+    },
     contentBody: {
         backgroundColor: SECUNDARY_COLOR,
         borderTopLeftRadius: 30,

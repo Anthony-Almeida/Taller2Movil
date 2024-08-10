@@ -117,10 +117,10 @@ export const LoginScreen = () => {
                     <Text style={styles.textRedirection}>
                         No tienes cuenta? Regístrate ahora
                     </Text>
-                    <Text style={styles.contentBody} >
+                </TouchableOpacity>
+                <Text style={styles.contentBody} >
                     Realiza tus compras de manera rápida y segura y obten beneficios y descuentos para tu proxima compra
                     </Text>
-                </TouchableOpacity>
             </BodyComponent>
         </View>
     )
